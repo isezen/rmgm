@@ -1,0 +1,11 @@
+Package: rmgm
+Type: Package
+Title: Climate data for Turkey
+Version: 0.1.0
+Authors@R: person("Ismail", "SEZEN", email = "sezenismail@gmail.com", role = c("aut", "cre"))
+Maintainer: Ismail SEZEN <sezenismail@gmail.com>
+Description: This package contains three climate datasets for Turkey.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
