@@ -1,5 +1,6 @@
-
+library(webdriver)
 source("R/translate.r")
+# install phantomjs
 
 get_table1 <- function(tab1) {
   s <- unlist(strsplit(tab1$getText(), split = "\n", fixed = TRUE))
