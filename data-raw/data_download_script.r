@@ -1,4 +1,6 @@
 
+source("R/translate.r")
+
 get_table1 <- function(tab1) {
   s <- unlist(strsplit(tab1$getText(), split = "\n", fixed = TRUE))
   col_names <- unlist(strsplit(s[1], " "))[-1]
@@ -120,7 +122,7 @@ save_data <- function() {
   df <- download_all_stats()
   df <- lapply(df, function(d) {
     d[is.na(d)] <- NA
-    rmet::translate(d, "en")
+    translate(d, "en")
   })
   trcli2 = df[[1]]; trexm2 = df[[2]]; trex2 = df[[3]]
   access_time <- attr(trcli2, "access")
